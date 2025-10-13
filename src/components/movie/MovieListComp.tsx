@@ -2,9 +2,10 @@ import {useAppSelector} from "../../redux/hooks/useAppSelector.tsx";
 import {useAppDispatch} from "../../redux/hooks/useAppDispatch.tsx";
 import {useEffect} from "react";
 import {moviesSliceActions} from "../../redux/slices/movieSlice.ts";
-import {MovieComp} from "./MovieComp.tsx";
+import {MovieListCardComp} from "./MovieListCardComp.tsx";
+import './movie.css'
 
-export const MoviesComp = () => {
+export const MovieListComp = () => {
 
     const {movies} = useAppSelector(({movieSlice}) => movieSlice);
     const dispatch = useAppDispatch();
@@ -17,8 +18,8 @@ export const MoviesComp = () => {
 
 
     return (
-        <>
-            {movies.map((movie) => <MovieComp key={movie.id} movie={movie} />)}
-        </>
+        <section className={"movie_list"}>
+            {movies.map((movie) => <MovieListCardComp key={movie.id} movie={movie} />)}
+        </section>
     );
 };

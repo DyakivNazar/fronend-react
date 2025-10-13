@@ -1,6 +1,7 @@
 import axios from "axios";
 
 const baseUrl = import.meta.env.VITE_API_URL
+const baseUrlImg = import.meta.env.VITE_IMG_URL
 
 export const axiosBD = axios.create({
     baseURL: baseUrl,
@@ -13,3 +14,5 @@ export const axiosBD = axios.create({
 axiosBD.interceptors.request.use((request) => {
     return request;
 });
+
+export const getImage = (path: string) => `${baseUrlImg}${path}`;

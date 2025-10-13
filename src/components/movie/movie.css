@@ -1,0 +1,13 @@
+.movie_list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.movie_card{
+    height: 200px;
+}
+
+img{
+    width: 100px;
+    height: 150px;
+}
