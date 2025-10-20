@@ -1,0 +1,60 @@
+header {
+    height: 60px;
+    background-color: #401020;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+nav ul {
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+    color: #8f8f8f;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-link {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background: rgba(64, 16, 32, 0.8);
+    border-radius: 0 0 8px 8px;
+    min-width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.25s ease;
+    z-index: 10;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    width: 120px;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdown-menu li:hover, .menu-link:hover {
+    color: white;
+}

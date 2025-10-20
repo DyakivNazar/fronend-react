@@ -1,0 +1,15 @@
+.stars_gold {
+    color: gold;
+    font-size: 24px;
+}
+
+.stars_withe {
+    color: #ccc;
+    font-size: 24px;
+}
+
+.stars_value {
+    color: gold;
+    margin-left: 10px;
+    font-size: 20px;
+}

@@ -5,12 +5,18 @@
     box-sizing: border-box;
     font-family: "Plus Jakarta Sans", serif;
 }
+
+body {
+    background-color: #1B191A;
+    color: white;
+}
+
 a {
     text-decoration: none;
     color: inherit;
 }
 
-ul, ol {
+ul, ol, li {
     list-style: none;
 }
 
@@ -30,6 +36,6 @@ img {
     height: auto;
 }
 
-input{
+input {
     border: none;
 }
